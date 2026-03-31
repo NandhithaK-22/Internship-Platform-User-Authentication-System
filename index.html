@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>MyPortal</h1>
+    <ul>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#upload">Resume</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Register -->
+    <div id="registerSection" class="section active">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" required />
+        
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" required />
+        
+        <label for="regRole">Role</label>
+        <select id="regRole">
+          <option value="student">Student</option>
+          <option value="alumni">Alumni</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- Login -->
+    <div id="loginSection" class="section">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" required />
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Profile -->
+    <div id="profileSection" class="section">
+      <h2>Get User Profile</h2>
+      <form id="getProfileForm">
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" required />
+        <button type="submit">Get Profile</button>
+      </form>
+    </div>
+
+    <!-- Resume Upload -->
+    <div id="resumeSection" class="section">
+      <h2>Upload Resume</h2>
+      <form id="resumeForm" enctype="multipart/form-data">
+        <label for="resumeFile">Choose Resume</label>
+        <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" required />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
