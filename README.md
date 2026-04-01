@@ -62,4 +62,9 @@ npm install
 
 # Run the application
 npm start
-   
+```
+---
+## License
+This project is licensed under the MIT License.
+## Author
+Nandhitha
